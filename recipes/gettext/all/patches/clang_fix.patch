@@ -1,0 +1,27 @@
+diff --git a/gettext-tools/gnulib-lib/obstack.c b/gettext-tools/gnulib-lib/obstack.c
+index 6e82da054c..e6475a2a09 100644
+--- a/gettext-tools/gnulib-lib/obstack.c
++++ b/gettext-tools/gnulib-lib/obstack.c
+@@ -326,7 +326,7 @@
+ #   include <libio/iolibio.h>
+ #  endif
+ 
+-static _Noreturn void
++static __attribute_noreturn__ void
+ print_and_abort (void)
+ {
+   /* Don't change any of these strings.  Yes, it would be possible to add
+
+diff --git a/gettext-tools/libgettextpo/obstack.c b/gettext-tools/libgettextpo/obstack.c
+index 6e82da054c..e6475a2a09 100644
+--- a/gettext-tools/libgettextpo/obstack.c
++++ b/gettext-tools/libgettextpo/obstack.c
+@@ -326,7 +326,7 @@ int obstack_exit_failure = EXIT_FAILURE;
+ #   include <libio/iolibio.h>
+ #  endif
+ 
+-static _Noreturn void
++static __attribute_noreturn__ void
+ print_and_abort (void)
+ {
+   /* Don't change any of these strings.  Yes, it would be possible to add
